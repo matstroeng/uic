@@ -1,0 +1,32 @@
+Hejsan,
+Här kommer en sammanställning med tips om WordPress:
+
+# Utvecklingsverktyg
+* Använd Kint Debugger för att debugga: http://wordpress.org/plugins/kint-debugger/
+* Vi kodar i Sublime Text. Det fina är att man kan få flera fönster parallellt i ett projekt, samt syntax highlighting. Något mer fancy är vi inte ute efter. Testa det!
+
+# Konfiguration
+* Den konfigurationsfil vi använder för multistage ser ut såhär: https://gist.github.com/gish/5669510
+* Vår www-root har mapparna /content och /wordpress. I content finns plugins och övrigt som hör hemma i wp-content-mappen. I wordpress finns wordpress core. Spana in den här repon så förstår du: https://github.com/markjaquith/WordPress-Skeleton
+
+# Tema
+* Använd WP_Query för att hämta innehållet: http://codex.wordpress.org/Class_Reference/WP_Query
+** Glöm inte att köra wp_reset_postdata() i slutet av varje scope för loopar
+* WPs så kallade Template Hierarchy kan vara bra att skriva ut och ha som referens när du skapar template-filerna för temat: http://codex.wordpress.org/Template_Hierarchy
+* Glöm inte wp_head() och wp_footer() i header- respektive footer-filen.
+* För att skapa metafält till inlägg i admin-vyn kan du antingen använda Simple Fields eller vårt bibliotek wg-meta-box. (wordpress.org/plugins/simple-fields/, https://github.com/Webbgaraget/wg-meta-box)
+* Den här sidan kommer vara din mest besökta under utvecklingstiden: http://codex.wordpress.org/Function_Reference/
+
+Lycka till!
+
+MVH
+/ Erik 
+--
+
+Erik Hedberg
+Utvecklare och projektledare, Webbgaraget AB
+
+erik@webbgaraget.se
+070-238 22 76
+@ErikHedberg
+http://www.webbgaraget.se
